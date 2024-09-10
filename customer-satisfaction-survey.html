@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Customer Satisfaction Survey</title>
+
+    <style>
+
+        body {
+
+            font-family: Verdana;
+
+            margin: 20px;
+
+            background-color: #AAC4DB;
+
+        }
+
+        h1 {
+
+            color: #104775;
+
+        }
+
+        .container {
+
+            background-color: #fff;
+
+            padding: 20px;
+
+            border-radius: 8px;
+
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+            max-width: 600px;
+
+            margin: 0 auto;
+
+        }
+
+        label {
+
+            display: block;
+
+            margin: 15px 0 5px;
+
+        }
+
+        input[type="text"],
+
+        textarea,
+
+        select {
+
+            width: 100%;
+
+            padding: 10px;
+
+            margin-top: 5px;
+
+            border-radius: 4px;
+
+            border: 1px solid #DD9333;
+
+        }
+
+        textarea {
+
+            resize: vertical;
+
+            height: 100px;
+
+        }
+
+        .submit-btn {
+
+            background-color: #DD9335;
+
+            color: white;
+
+            border: none;
+
+            padding: 10px 20px;
+
+            cursor: pointer;
+
+            border-radius: 4px;
+
+            margin-top: 20px;
+
+        }
+
+        .submit-btn:hover {
+
+            background-color: #DD9333;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+ 
+
+<div class="container">
+
+    <h1>Customer Satisfaction Survey</h1>
+
+    <p>Dear [Customer Name],</p>
+
+    <p>Thank you for choosing [Business name]. We value your feedback and would appreciate it if you could take a few minutes to complete this survey. Your insights help us improve our products and services.</p>
+
+ 
+
+    <form action="/submit-survey" method="post">
+
+ 
+
+        <!-- 1. Overall Satisfaction -->
+
+        <label for="overall-satisfaction">1. How satisfied are you with your overall experience with Adflex?</label>
+
+        <select id="overall-satisfaction" name="overall-satisfaction">
+
+            <option value="very-satisfied">Very Satisfied</option>
+
+            <option value="satisfied">Satisfied</option>
+
+            <option value="neutral">Neutral</option>
+
+            <option value="unsatisfied">Unsatisfied</option>
+
+            <option value="very-unsatisfied">Very Unsatisfied</option>
+
+        </select>
+
+ 
+
+        <!-- 2. Product/Service Quality -->
+
+        <label for="product-quality">2. How would you rate the quality of the product/service you received?</label>
+
+        <select id="product-quality" name="product-quality">
+
+            <option value="excellent">Excellent</option>
+
+            <option value="good">Good</option>
+
+            <option value="average">Average</option>
+
+            <option value="poor">Poor</option>
+
+            <option value="very-poor">Very Poor</option>
+
+        </select>
+
+ 
+
+        <!-- 3. Customer Support -->
+
+        <label for="customer-support">3. How satisfied are you with the support you received from our customer service team?</label>
+
+        <select id="customer-support" name="customer-support">
+
+            <option value="very-satisfied">Very Satisfied</option>
+
+            <option value="satisfied">Satisfied</option>
+
+            <option value="neutral">Neutral</option>
+
+            <option value="unsatisfied">Unsatisfied</option>
+
+            <option value="very-unsatisfied">Very Unsatisfied</option>
+
+        </select>
+
+ 
+
+        <!-- 4. Timeliness of Service -->
+
+        <label for="timeliness">4. Was your order/service completed within the expected time frame?</label>
+
+        <select id="timeliness" name="timeliness">
+
+            <option value="yes">Yes</option>
+
+            <option value="no">No</option>
+
+        </select>
+
+        <label for="timeliness-comments">If no, please specify why:</label>
+
+        <textarea id="timeliness-comments" name="timeliness-comments"></textarea>
+
+ 
+
+        <!-- 5. Ease of Use (For Digital Products) -->
+
+        <label for="ease-of-use">5. How easy was it to use our product/service?</label>
+
+        <select id="ease-of-use" name="ease-of-use">
+
+            <option value="very-easy">Very Easy</option>
+
+            <option value="easy">Easy</option>
+
+            <option value="neutral">Neutral</option>
+
+            <option value="difficult">Difficult</option>
+
+            <option value="very-difficult">Very Difficult</option>
+
+        </select>
+
+ 
+
+        <!-- 6. Value for Money -->
+
+        <label for="value-for-money">6. Do you feel that the product/service provided good value for the price paid?</label>
+
+        <select id="value-for-money" name="value-for-money">
+
+            <option value="excellent-value">Excellent Value</option>
+
+            <option value="good-value">Good Value</option>
+
+            <option value="average-value">Average Value</option>
+
+            <option value="poor-value">Poor Value</option>
+
+            <option value="very-poor-value">Very Poor Value</option>
+
+        </select>
+
+ 
+
+        <!-- 7. Likelihood to Recommend -->
+
+        <label for="recommend">7. How likely are you to recommend [Business name] to others?</label>
+
+        <select id="recommend" name="recommend">
+
+            <option value="very-likely">Very Likely</option>
+
+            <option value="likely">Likely</option>
+
+            <option value="neutral">Neutral</option>
+
+            <option value="unlikely">Unlikely</option>
+
+            <option value="very-unlikely">Very Unlikely</option>
+
+        </select>
+
+ 
+
+        <!-- 8. Suggestions for Improvement -->
+
+        <label for="suggestions">8. Please share any additional comments or suggestions on how we can improve:</label>
+
+        <textarea id="suggestions" name="suggestions"></textarea>
+
+ 
+
+        <!-- Submit Button -->
+
+        <button type="submit" class="submit-btn">Submit</button>
+
+ 
+
+    </form>
+
+</div>
+
+ 
+
+</body>
+
+</html>
+
+ 
